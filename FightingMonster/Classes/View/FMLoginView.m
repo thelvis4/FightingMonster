@@ -7,22 +7,32 @@
 //
 
 #import "FMLoginView.h"
+#import "FMLoginViewDatasource.h"
 
 @interface FMLoginView ()
-@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (weak, nonatomic) IBOutlet UIView *feedbackView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+@property (strong, nonatomic) FMLoginViewDatasource *datasource;
 
 @end
 
 @implementation FMLoginView
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self setUpTableView];
+}
+
+
 - (void)setModel:(FMLoginViewModel *)model {
     if (_model != model) {
         _model = model;
         
-        self.usernameTextField.text = model.username;
+        self.datasource.model = model;
+        [self.tableView reloadData];
     }
 }
 
@@ -30,7 +40,7 @@
 #pragma mark - Actions
 
 - (IBAction)logIn:(UIButton *)sender {
-    [self assignCredentialsToModel];
+    [self.datasource assignCredentialsToModel];
     [self.delegate didPressLoginInLoginView:self];
 }
 
@@ -51,9 +61,12 @@
 
 #pragma mark - Other Private Methods
 
-- (void)assignCredentialsToModel {
-    [self.model setUsername:self.usernameTextField.text];
-    [self.model setPassword:self.passwordTextField.text];
+- (void)setUpTableView {
+    self.datasource = [[FMLoginViewDatasource alloc] initWithTableView:self.tableView];
+    [self.datasource setUp];
+    
+    self.tableView.dataSource = self.datasource;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 

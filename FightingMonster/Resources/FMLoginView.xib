@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -14,26 +14,15 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5G-qz-xzP">
-                    <rect key="frame" x="200" y="164" width="200" height="30"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-x7-76g">
+                    <rect key="frame" x="0.0" y="125" width="600" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="MTb-xl-DSW"/>
-                        <constraint firstAttribute="width" constant="200" id="bTn-Td-eok"/>
+                        <constraint firstAttribute="height" constant="150" id="5La-6G-4c3"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5P-v4-vYL">
-                    <rect key="frame" x="200" y="216" width="200" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="VmS-oG-dfI"/>
-                        <constraint firstAttribute="height" constant="30" id="pwb-zk-FcI"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                </textField>
+                </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTx-H1-heP">
-                    <rect key="frame" x="281" y="286" width="38" height="30"/>
+                    <rect key="frame" x="281" y="283" width="38" height="30"/>
                     <state key="normal" title="Login">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -57,23 +46,21 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="G5P-v4-vYL" firstAttribute="top" secondItem="B5G-qz-xzP" secondAttribute="bottom" constant="22" id="0nt-YM-keb"/>
+                <constraint firstAttribute="trailing" secondItem="0Tb-x7-76g" secondAttribute="trailing" id="8jZ-xR-Jdv"/>
                 <constraint firstItem="jmj-uv-ag0" firstAttribute="leading" secondItem="Yj6-TP-owH" secondAttribute="leading" id="DEF-SR-NEj"/>
                 <constraint firstAttribute="centerX" secondItem="tTx-H1-heP" secondAttribute="centerX" id="EOE-RG-O2m"/>
-                <constraint firstItem="tTx-H1-heP" firstAttribute="top" secondItem="G5P-v4-vYL" secondAttribute="bottom" constant="40" id="J0q-RM-do4"/>
-                <constraint firstAttribute="centerX" secondItem="B5G-qz-xzP" secondAttribute="centerX" id="LYZ-6F-NfS"/>
                 <constraint firstAttribute="trailing" secondItem="jmj-uv-ag0" secondAttribute="trailing" id="WDz-8M-HR6"/>
-                <constraint firstItem="B5G-qz-xzP" firstAttribute="top" secondItem="Yj6-TP-owH" secondAttribute="top" constant="164" id="g4X-O5-RO4"/>
-                <constraint firstAttribute="centerX" secondItem="G5P-v4-vYL" secondAttribute="centerX" id="gwb-Pu-6wp"/>
+                <constraint firstItem="0Tb-x7-76g" firstAttribute="leading" secondItem="Yj6-TP-owH" secondAttribute="leading" id="bzA-YK-pPu"/>
                 <constraint firstAttribute="bottom" secondItem="jmj-uv-ag0" secondAttribute="bottom" id="kly-Sb-fy3"/>
                 <constraint firstItem="jmj-uv-ag0" firstAttribute="top" secondItem="Yj6-TP-owH" secondAttribute="top" id="knC-3t-Z5B"/>
+                <constraint firstItem="tTx-H1-heP" firstAttribute="top" secondItem="0Tb-x7-76g" secondAttribute="bottom" constant="8" id="pb7-gf-5hD"/>
+                <constraint firstItem="0Tb-x7-76g" firstAttribute="top" secondItem="Yj6-TP-owH" secondAttribute="top" constant="125" id="zxe-oT-4bd"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <connections>
                 <outlet property="activityIndicator" destination="NlY-yh-fme" id="JeK-0m-quS"/>
                 <outlet property="feedbackView" destination="jmj-uv-ag0" id="Dmp-3X-vKf"/>
-                <outlet property="passwordTextField" destination="G5P-v4-vYL" id="fyS-RX-xww"/>
-                <outlet property="usernameTextField" destination="B5G-qz-xzP" id="LmM-S5-n7G"/>
+                <outlet property="tableView" destination="0Tb-x7-76g" id="qrH-gK-vyf"/>
             </connections>
             <point key="canvasLocation" x="336" y="-804"/>
         </view>

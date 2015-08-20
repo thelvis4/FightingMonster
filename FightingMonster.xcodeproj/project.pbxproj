@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44137AF21B86515400AF8532 /* FMLoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44137AF11B86515400AF8532 /* FMLoginCell.xib */; };
+		44E253161B864FED009D1B17 /* FMLoginViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E253151B864FED009D1B17 /* FMLoginViewDatasource.m */; };
+		44E2531A1B865007009D1B17 /* FMLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E253191B865007009D1B17 /* FMLoginCell.m */; };
 		A3D891D71B85C68900819923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891CD1B85C68900819923 /* AppDelegate.m */; };
 		A3D891D91B85C68900819923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891D01B85C68900819923 /* main.m */; };
 		A3D891DA1B85C68900819923 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D891D21B85C68900819923 /* LaunchScreen.xib */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44137AF11B86515400AF8532 /* FMLoginCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMLoginCell.xib; sourceTree = "<group>"; };
+		44E253141B864FED009D1B17 /* FMLoginViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLoginViewDatasource.h; sourceTree = "<group>"; };
+		44E253151B864FED009D1B17 /* FMLoginViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLoginViewDatasource.m; sourceTree = "<group>"; };
+		44E253181B865007009D1B17 /* FMLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLoginCell.h; sourceTree = "<group>"; };
+		44E253191B865007009D1B17 /* FMLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLoginCell.m; sourceTree = "<group>"; };
 		A3D891A11B85C59200819923 /* FightingMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightingMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D891BA1B85C59200819923 /* FightingMonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FightingMonsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D891BF1B85C59200819923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +53,7 @@
 		A3D891D31B85C68900819923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A3D891D61B85C68900819923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A3D891E61B85E23500819923 /* FMUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUserTests.m; sourceTree = "<group>"; };
-		A3D891E81B85EFCE00819923 /* FMLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMLoginView.xib; sourceTree = "<group>"; };
+		A3D891E81B85EFCE00819923 /* FMLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FMLoginView.xib; path = ../../Resources/FMLoginView.xib; sourceTree = "<group>"; };
 		A3D891EE1B86134100819923 /* FMFakeLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFakeLoginView.h; sourceTree = "<group>"; };
 		A3D891EF1B86134100819923 /* FMFakeLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFakeLoginView.m; sourceTree = "<group>"; };
 		A3D891F41B8614DE00819923 /* FMViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMViewControllerTests.m; sourceTree = "<group>"; };
@@ -92,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44E253131B864FED009D1B17 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				44E253141B864FED009D1B17 /* FMLoginViewDatasource.h */,
+				44E253151B864FED009D1B17 /* FMLoginViewDatasource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		44E253171B864FF6009D1B17 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44E253181B865007009D1B17 /* FMLoginCell.h */,
+				44E253191B865007009D1B17 /* FMLoginCell.m */,
+				44137AF11B86515400AF8532 /* FMLoginCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A3D891981B85C59200819923 = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +202,6 @@
 		A3D891D11B85C68900819923 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A3D891E81B85EFCE00819923 /* FMLoginView.xib */,
 				A3D891D21B85C68900819923 /* LaunchScreen.xib */,
 				A3D891D61B85C68900819923 /* Images.xcassets */,
 			);
@@ -264,8 +290,11 @@
 		A3D892171B8633AF00819923 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44E253171B864FF6009D1B17 /* Cell */,
+				44E253131B864FED009D1B17 /* DataSource */,
 				A3D892181B8633AF00819923 /* FMLoginView.h */,
 				A3D892191B8633AF00819923 /* FMLoginView.m */,
+				A3D891E81B85EFCE00819923 /* FMLoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44137AF21B86515400AF8532 /* FMLoginCell.xib in Resources */,
 				A3D891DC1B85C68900819923 /* Images.xcassets in Resources */,
 				A3D891DA1B85C68900819923 /* LaunchScreen.xib in Resources */,
 				A3D891E91B85EFCE00819923 /* FMLoginView.xib in Resources */,
@@ -374,6 +404,8 @@
 				A3D891D91B85C68900819923 /* main.m in Sources */,
 				A3D8921E1B8633AF00819923 /* FMLoginView.m in Sources */,
 				A3D8921D1B8633AF00819923 /* FMLoginStorage.m in Sources */,
+				44E2531A1B865007009D1B17 /* FMLoginCell.m in Sources */,
+				44E253161B864FED009D1B17 /* FMLoginViewDatasource.m in Sources */,
 				A3D8921A1B8633AF00819923 /* FMViewController.m in Sources */,
 				A3D8921B1B8633AF00819923 /* FMLoginHandler.m in Sources */,
 				A3D8921C1B8633AF00819923 /* FMUser.m in Sources */,
@@ -499,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/FightingMonster/Other_Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/FightingMonster/Other_Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
