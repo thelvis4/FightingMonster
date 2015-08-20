@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class FMLoginHandler;
+@class FMLoginStorage;
 
 @interface FMViewController : UIViewController
-
+- (instancetype)initWithLoginHandler:(FMLoginHandler *)handler
+                        loginStorage:(FMLoginStorage *)storage;
 @end

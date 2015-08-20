@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3D891C11B85C59200819923 /* FightingMonsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891C01B85C59200819923 /* FightingMonsterTests.m */; };
 		A3D891D71B85C68900819923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891CD1B85C68900819923 /* AppDelegate.m */; };
 		A3D891D91B85C68900819923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891D01B85C68900819923 /* main.m */; };
 		A3D891DA1B85C68900819923 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D891D21B85C68900819923 /* LaunchScreen.xib */; };
-		A3D891DB1B85C68900819923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D891D41B85C68900819923 /* Main.storyboard */; };
 		A3D891DC1B85C68900819923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D891D61B85C68900819923 /* Images.xcassets */; };
-		A3D891DF1B85C6C800819923 /* FMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891DE1B85C6C800819923 /* FMViewController.m */; };
+		A3D891E71B85E23500819923 /* FMUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891E61B85E23500819923 /* FMUserTests.m */; };
+		A3D891E91B85EFCE00819923 /* FMLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D891E81B85EFCE00819923 /* FMLoginView.xib */; };
+		A3D891F01B86134100819923 /* FMFakeLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891EF1B86134100819923 /* FMFakeLoginView.m */; };
+		A3D891F51B8614DE00819923 /* FMViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891F41B8614DE00819923 /* FMViewControllerTests.m */; };
+		A3D891FD1B86170400819923 /* FMFakeLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891FC1B86170400819923 /* FMFakeLoginHandler.m */; };
+		A3D8920A1B861B6F00819923 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D891FF1B861B6F00819923 /* libOCMock.a */; };
+		A3D8921A1B8633AF00819923 /* FMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D8920D1B8633AF00819923 /* FMViewController.m */; };
+		A3D8921B1B8633AF00819923 /* FMLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D892101B8633AF00819923 /* FMLoginHandler.m */; };
+		A3D8921C1B8633AF00819923 /* FMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D892131B8633AF00819923 /* FMUser.m */; };
+		A3D8921D1B8633AF00819923 /* FMLoginStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D892161B8633AF00819923 /* FMLoginStorage.m */; };
+		A3D8921E1B8633AF00819923 /* FMLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D892191B8633AF00819923 /* FMLoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +38,39 @@
 		A3D891A11B85C59200819923 /* FightingMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightingMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D891BA1B85C59200819923 /* FightingMonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FightingMonsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D891BF1B85C59200819923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3D891C01B85C59200819923 /* FightingMonsterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FightingMonsterTests.m; sourceTree = "<group>"; };
 		A3D891CC1B85C68900819923 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3D891CD1B85C68900819923 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3D891CF1B85C68900819923 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3D891D01B85C68900819923 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3D891D31B85C68900819923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A3D891D51B85C68900819923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3D891D61B85C68900819923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A3D891DD1B85C6C800819923 /* FMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMViewController.h; sourceTree = "<group>"; };
-		A3D891DE1B85C6C800819923 /* FMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMViewController.m; sourceTree = "<group>"; };
+		A3D891E61B85E23500819923 /* FMUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUserTests.m; sourceTree = "<group>"; };
+		A3D891E81B85EFCE00819923 /* FMLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMLoginView.xib; sourceTree = "<group>"; };
+		A3D891EE1B86134100819923 /* FMFakeLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFakeLoginView.h; sourceTree = "<group>"; };
+		A3D891EF1B86134100819923 /* FMFakeLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFakeLoginView.m; sourceTree = "<group>"; };
+		A3D891F41B8614DE00819923 /* FMViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMViewControllerTests.m; sourceTree = "<group>"; };
+		A3D891FB1B86170400819923 /* FMFakeLoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFakeLoginHandler.h; sourceTree = "<group>"; };
+		A3D891FC1B86170400819923 /* FMFakeLoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFakeLoginHandler.m; sourceTree = "<group>"; };
+		A3D891FF1B861B6F00819923 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		A3D892011B861B6F00819923 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		A3D892021B861B6F00819923 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		A3D892031B861B6F00819923 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		A3D892041B861B6F00819923 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		A3D892051B861B6F00819923 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		A3D892061B861B6F00819923 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		A3D892071B861B6F00819923 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		A3D892081B861B6F00819923 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		A3D892091B861B6F00819923 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		A3D8920C1B8633AF00819923 /* FMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMViewController.h; sourceTree = "<group>"; };
+		A3D8920D1B8633AF00819923 /* FMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMViewController.m; sourceTree = "<group>"; };
+		A3D8920F1B8633AF00819923 /* FMLoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLoginHandler.h; sourceTree = "<group>"; };
+		A3D892101B8633AF00819923 /* FMLoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLoginHandler.m; sourceTree = "<group>"; };
+		A3D892121B8633AF00819923 /* FMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUser.h; sourceTree = "<group>"; };
+		A3D892131B8633AF00819923 /* FMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUser.m; sourceTree = "<group>"; };
+		A3D892151B8633AF00819923 /* FMLoginStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLoginStorage.h; sourceTree = "<group>"; };
+		A3D892161B8633AF00819923 /* FMLoginStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLoginStorage.m; sourceTree = "<group>"; };
+		A3D892181B8633AF00819923 /* FMLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLoginView.h; sourceTree = "<group>"; };
+		A3D892191B8633AF00819923 /* FMLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLoginView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D8920A1B861B6F00819923 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +123,11 @@
 		A3D891BD1B85C59200819923 /* FightingMonsterTests */ = {
 			isa = PBXGroup;
 			children = (
-				A3D891C01B85C59200819923 /* FightingMonsterTests.m */,
+				A3D891FE1B861B6F00819923 /* OCMock */,
+				A3D891FA1B86170400819923 /* FakeLoginHandler */,
+				A3D891ED1B86133500819923 /* FakeLoginView */,
+				A3D891E61B85E23500819923 /* FMUserTests.m */,
+				A3D891F41B8614DE00819923 /* FMViewControllerTests.m */,
 				A3D891BE1B85C59200819923 /* Supporting Files */,
 			);
 			path = FightingMonsterTests;
@@ -108,8 +144,11 @@
 		A3D891CA1B85C68900819923 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A3D891DD1B85C6C800819923 /* FMViewController.h */,
-				A3D891DE1B85C6C800819923 /* FMViewController.m */,
+				A3D8920B1B8633AF00819923 /* Controller */,
+				A3D8920E1B8633AF00819923 /* Handler */,
+				A3D892111B8633AF00819923 /* Model */,
+				A3D892141B8633AF00819923 /* Storage */,
+				A3D892171B8633AF00819923 /* View */,
 				A3D891CB1B85C68900819923 /* AppDelegate */,
 			);
 			path = Classes;
@@ -136,11 +175,99 @@
 		A3D891D11B85C68900819923 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3D891E81B85EFCE00819923 /* FMLoginView.xib */,
 				A3D891D21B85C68900819923 /* LaunchScreen.xib */,
-				A3D891D41B85C68900819923 /* Main.storyboard */,
 				A3D891D61B85C68900819923 /* Images.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3D891ED1B86133500819923 /* FakeLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				A3D891EE1B86134100819923 /* FMFakeLoginView.h */,
+				A3D891EF1B86134100819923 /* FMFakeLoginView.m */,
+			);
+			path = FakeLoginView;
+			sourceTree = "<group>";
+		};
+		A3D891FA1B86170400819923 /* FakeLoginHandler */ = {
+			isa = PBXGroup;
+			children = (
+				A3D891FB1B86170400819923 /* FMFakeLoginHandler.h */,
+				A3D891FC1B86170400819923 /* FMFakeLoginHandler.m */,
+			);
+			path = FakeLoginHandler;
+			sourceTree = "<group>";
+		};
+		A3D891FE1B861B6F00819923 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				A3D891FF1B861B6F00819923 /* libOCMock.a */,
+				A3D892001B861B6F00819923 /* OCMock */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		A3D892001B861B6F00819923 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				A3D892011B861B6F00819923 /* NSNotificationCenter+OCMAdditions.h */,
+				A3D892021B861B6F00819923 /* OCMArg.h */,
+				A3D892031B861B6F00819923 /* OCMConstraint.h */,
+				A3D892041B861B6F00819923 /* OCMLocation.h */,
+				A3D892051B861B6F00819923 /* OCMMacroState.h */,
+				A3D892061B861B6F00819923 /* OCMock.h */,
+				A3D892071B861B6F00819923 /* OCMockObject.h */,
+				A3D892081B861B6F00819923 /* OCMRecorder.h */,
+				A3D892091B861B6F00819923 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		A3D8920B1B8633AF00819923 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3D8920C1B8633AF00819923 /* FMViewController.h */,
+				A3D8920D1B8633AF00819923 /* FMViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3D8920E1B8633AF00819923 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				A3D8920F1B8633AF00819923 /* FMLoginHandler.h */,
+				A3D892101B8633AF00819923 /* FMLoginHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		A3D892111B8633AF00819923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3D892121B8633AF00819923 /* FMUser.h */,
+				A3D892131B8633AF00819923 /* FMUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3D892141B8633AF00819923 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A3D892151B8633AF00819923 /* FMLoginStorage.h */,
+				A3D892161B8633AF00819923 /* FMLoginStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A3D892171B8633AF00819923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3D892181B8633AF00819923 /* FMLoginView.h */,
+				A3D892191B8633AF00819923 /* FMLoginView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D891DB1B85C68900819923 /* Main.storyboard in Resources */,
 				A3D891DC1B85C68900819923 /* Images.xcassets in Resources */,
 				A3D891DA1B85C68900819923 /* LaunchScreen.xib in Resources */,
+				A3D891E91B85EFCE00819923 /* FMLoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +372,11 @@
 			files = (
 				A3D891D71B85C68900819923 /* AppDelegate.m in Sources */,
 				A3D891D91B85C68900819923 /* main.m in Sources */,
-				A3D891DF1B85C6C800819923 /* FMViewController.m in Sources */,
+				A3D8921E1B8633AF00819923 /* FMLoginView.m in Sources */,
+				A3D8921D1B8633AF00819923 /* FMLoginStorage.m in Sources */,
+				A3D8921A1B8633AF00819923 /* FMViewController.m in Sources */,
+				A3D8921B1B8633AF00819923 /* FMLoginHandler.m in Sources */,
+				A3D8921C1B8633AF00819923 /* FMUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +384,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D891C11B85C59200819923 /* FightingMonsterTests.m in Sources */,
+				A3D891FD1B86170400819923 /* FMFakeLoginHandler.m in Sources */,
+				A3D891F51B8614DE00819923 /* FMViewControllerTests.m in Sources */,
+				A3D891F01B86134100819923 /* FMFakeLoginView.m in Sources */,
+				A3D891E71B85E23500819923 /* FMUserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +408,6 @@
 				A3D891D31B85C68900819923 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		A3D891D41B85C68900819923 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3D891D51B85C68900819923 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,8 +527,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/FightingMonsterTests/OCMock/OCMock/",
+				);
 				INFOPLIST_FILE = FightingMonsterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FightingMonsterTests/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FightingMonster.app/FightingMonster";
 			};
@@ -416,8 +557,23 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/FightingMonsterTests/OCMock/OCMock/",
+				);
 				INFOPLIST_FILE = FightingMonsterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FightingMonsterTests/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FightingMonster.app/FightingMonster";
 			};
@@ -442,6 +598,7 @@
 				A3D891C61B85C59200819923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3D891C71B85C59200819923 /* Build configuration list for PBXNativeTarget "FightingMonsterTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +607,7 @@
 				A3D891C91B85C59200819923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
