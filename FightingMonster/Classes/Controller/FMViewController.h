@@ -11,6 +11,6 @@
 @class FMLoginStorage;
 
 @interface FMViewController : UIViewController
-- (instancetype)initWithLoginHandler:(FMLoginHandler *)handler
-                        loginStorage:(FMLoginStorage *)storage;
++ (instancetype)instantiateWithLoginHandler:(FMLoginHandler *)handler
+                               loginStorage:(FMLoginStorage *)storage;
 @end

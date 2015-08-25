@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75D9CBBF1B8C929D00AD4208 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D9CBBE1B8C929D00AD4208 /* Storyboard.storyboard */; };
 		A3D891D71B85C68900819923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891CD1B85C68900819923 /* AppDelegate.m */; };
 		A3D891D91B85C68900819923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891D01B85C68900819923 /* main.m */; };
 		A3D891DA1B85C68900819923 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D891D21B85C68900819923 /* LaunchScreen.xib */; };
 		A3D891DC1B85C68900819923 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D891D61B85C68900819923 /* Images.xcassets */; };
 		A3D891E71B85E23500819923 /* FMUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891E61B85E23500819923 /* FMUserTests.m */; };
-		A3D891E91B85EFCE00819923 /* FMLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D891E81B85EFCE00819923 /* FMLoginView.xib */; };
 		A3D891F01B86134100819923 /* FMFakeLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891EF1B86134100819923 /* FMFakeLoginView.m */; };
 		A3D891F51B8614DE00819923 /* FMViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891F41B8614DE00819923 /* FMViewControllerTests.m */; };
 		A3D891FD1B86170400819923 /* FMFakeLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D891FC1B86170400819923 /* FMFakeLoginHandler.m */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75D9CBBE1B8C929D00AD4208 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		A3D891A11B85C59200819923 /* FightingMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightingMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D891BA1B85C59200819923 /* FightingMonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FightingMonsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D891BF1B85C59200819923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		A3D891D31B85C68900819923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A3D891D61B85C68900819923 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A3D891E61B85E23500819923 /* FMUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUserTests.m; sourceTree = "<group>"; };
-		A3D891E81B85EFCE00819923 /* FMLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMLoginView.xib; sourceTree = "<group>"; };
 		A3D891EE1B86134100819923 /* FMFakeLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFakeLoginView.h; sourceTree = "<group>"; };
 		A3D891EF1B86134100819923 /* FMFakeLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFakeLoginView.m; sourceTree = "<group>"; };
 		A3D891F41B8614DE00819923 /* FMViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMViewControllerTests.m; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		A3D891D11B85C68900819923 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A3D891E81B85EFCE00819923 /* FMLoginView.xib */,
+				75D9CBBE1B8C929D00AD4208 /* Storyboard.storyboard */,
 				A3D891D21B85C68900819923 /* LaunchScreen.xib */,
 				A3D891D61B85C68900819923 /* Images.xcassets */,
 			);
@@ -352,7 +352,7 @@
 			files = (
 				A3D891DC1B85C68900819923 /* Images.xcassets in Resources */,
 				A3D891DA1B85C68900819923 /* LaunchScreen.xib in Resources */,
-				A3D891E91B85EFCE00819923 /* FMLoginView.xib in Resources */,
+				75D9CBBF1B8C929D00AD4208 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

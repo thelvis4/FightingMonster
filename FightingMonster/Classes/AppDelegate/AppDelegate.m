@@ -34,7 +34,7 @@
     FMLoginHandler *handler = [[FMLoginHandler alloc] init];
     FMLoginStorage *storage = [[FMLoginStorage alloc] init];
     
-    return [[FMViewController alloc] initWithLoginHandler:handler loginStorage:storage];
+    return [FMViewController instantiateWithLoginHandler:handler loginStorage:storage];
 }
 
 @end

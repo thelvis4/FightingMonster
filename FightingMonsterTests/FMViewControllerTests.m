@@ -32,8 +32,8 @@ static NSString *const FMTestUsername = @"masika_povidla"; //:D
     _fakeHandler = [[FMFakeLoginHandler alloc] init];
     _fakeStorage = OCMClassMock([FMLoginStorage class]);
     
-    _viewController = [[FMViewController alloc] initWithLoginHandler:_fakeHandler
-                                                        loginStorage:_fakeStorage];
+    _viewController = [FMViewController instantiateWithLoginHandler:_fakeHandler
+                                                       loginStorage:_fakeStorage];
 }
 
 - (void)tearDown {
@@ -62,7 +62,7 @@ static NSString *const FMTestUsername = @"masika_povidla"; //:D
 - (void)testWhenViewDidLoadSetsLastUserName {
     //Given
     OCMStub([_fakeStorage lastLogedUsername]).andReturn(FMTestUsername);
-
+    
     //When
     FMFakeLoginView *view = [self injectViewAndCallViewDidLoad];
     

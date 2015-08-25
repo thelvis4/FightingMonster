@@ -22,17 +22,16 @@
 
 @implementation FMViewController
 
-- (instancetype)initWithLoginHandler:(FMLoginHandler *)handler
-                        loginStorage:(FMLoginStorage *)storage {
-    self = [super initWithNibName:@"FMLoginView" bundle:nil];
++ (instancetype)instantiateWithLoginHandler:(FMLoginHandler *)handler
+                               loginStorage:(FMLoginStorage *)storage {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    FMViewController *controller = [storyboard instantiateInitialViewController];
+    controller.loginHandler = handler;
+    controller.loginStorage = storage;
     
-    if (self) {
-        _loginHandler = handler;
-        _loginStorage = storage;
-    }
-    
-    return self;
+    return controller;
 }
+
 
 
 - (void)viewDidLoad {
