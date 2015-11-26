@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A091BCFE40E1358E647F76D4EAFEF620E84C46A4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EEE9FE730837FEA3FB3BD7EE83007525FA28CD31" : 0,
+    "A091BCFE40E1358E647F76D4EAFEF620E84C46A4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "97410766-F6FC-4902-B934-5C3CC342129A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EEE9FE730837FEA3FB3BD7EE83007525FA28CD31" : "..",
+    "A091BCFE40E1358E647F76D4EAFEF620E84C46A4" : "FightingMonster\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FightingMonster",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FightingMonster.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:CodeWay\/FightingMonster.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A091BCFE40E1358E647F76D4EAFEF620E84C46A4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:CodeWay\/WorkingFolder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EEE9FE730837FEA3FB3BD7EE83007525FA28CD31"
+    }
+  ]
+}
